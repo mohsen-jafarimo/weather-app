@@ -12,6 +12,7 @@ body {
   background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
