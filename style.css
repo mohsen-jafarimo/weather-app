@@ -16,12 +16,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 #container {
   padding: 1rem;
-  /* From https://css.glass */
+  /* margin-top: 3rem; */
+  margin: 0 auto;
   background: rgba(52, 140, 198, 0.37);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -37,4 +40,40 @@ button {
   padding: 0.5rem;
   border-radius: 7px;
   border: 1px solid transparent;
+}
+.weekdays {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.weekday {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  width: 100%;
+}
+.weather-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.weekday {
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.weather-info {
+  margin-right: 10px;
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
 }
