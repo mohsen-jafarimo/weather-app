@@ -42,13 +42,13 @@ button {
   border: 1px solid transparent;
 }
 .Weather {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
 .weather-info {
+  text-align: center;
   padding: 1rem;
   background: rgba(52, 140, 198, 0.37);
   border-radius: 16px;
@@ -65,4 +65,11 @@ button {
 }
 .temp {
   margin: 5px 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .Weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
